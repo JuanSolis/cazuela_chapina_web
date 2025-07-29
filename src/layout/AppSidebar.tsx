@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router";
-import { useSidebar } from "../../../../context/SidebarContext";
+import { useSidebar } from "../context/SidebarContext";
 
 // Assume these icons are imported from an icon library
 
@@ -15,7 +15,12 @@ const navItems: NavItem[] = [
   {
     icon: <p></p>,
     name: "Dashboard",
-    subItems: [{ name: "Ecommerce", path: "/", pro: false }],
+    subItems: [{ name: "Ecommerce", path: "/dashboard", pro: false }],
+  },
+  {
+    icon: <p></p>,
+    name: "ChatBot",
+    subItems: [{ name: "Chat", path: "/chatbot", pro: false }],
   },
   
 ];

@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, [isAuthenticated]);
 
   const login = (credentials: { username: string; password: string }) => {
-    if (credentials.username === "admin" && credentials.password === "1234") {
+    if (credentials.username === "admin" && credentials.password === "123456") {
       setIsAuthenticated(true);
       navigate("/dashboard");
     }

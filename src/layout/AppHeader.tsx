@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router";
-import { useSidebar } from "../../../../context/SidebarContext";
-import UserDropdown from "../../../../common/header/UserDropdown";
+import { useSidebar } from "../context/SidebarContext";
+import UserDropdown from "../common/header/UserDropdown";
 
 const AppHeader: React.FC = () => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
